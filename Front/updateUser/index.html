@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="menu.css" rel="stylesheet">
+    <link href="cadastro-user.css" rel="stylesheet">
+ 
+    <title>Editar Perfil</title>
+  </head>
+<body>
+    <script src="./verifyToken.js"></script>
+    <header class="header">
+      <div class="container">
+          <a href="../home" class="grid-4">
+              <img class="logo" src="logo.jpeg" alt="Vought">
+          </a>
+  
+          <nav class="header_menu grid-12">
+              <!-- tag estrutural de navegação -->
+              <ul>
+                  <li> <a href="../registerAd"> Anunciar </a></li>
+                  <li> <a href="../meusAd"> Meus serviços </a></li>
+                  <li> <a href="../entrar"> Entrar </a></li>
+  
+              </ul>
+  
+          </nav>
+      </div>
+    </header>
+<!---------------------- Content ------------------------------->
+
+  <div class='subtitle'>Editar perfil</div>
+
+  <div class='button-update'>
+    <button onclick="cancelUpdate()">Cancelar</button>
+  </div>
+  
+  <div class='bloco-form'>
+    <form id="myForm" class='template-form'>
+      <div id="field1">
+        <label for="name">
+          Nome
+          <br>
+          <input id="name" type="text">
+        </label>
+      </div>
+
+      <br>
+
+      <div id="field2">
+        <label for="email">
+          E-mail
+          <br>
+          <input id="email" type="email" name='name'>
+        </label>
+      </div>
+
+      <br>
+
+      <div id="field3">
+        <label for="contact">
+          Contato
+          <br>
+          <input id="contact" type="tel" name='telefone' pattern="[9]{1}-[0-9]{4}-[0-9]{4}">
+        </label>
+      </div>
+
+      <br>
+
+      <div id="field4">
+        <label for="oldPassword">
+          Senha antiga
+          <br>
+          <input id="oldPassword" type="password" name="senha">
+        </label>
+      </div>
+
+      <br>
+
+      <div id="field5">
+        <label for="password">
+          Nova senha
+          <br>
+          <input id="password" type="password" name="senha">
+        </label>
+      </div>
+
+      <br>
+      
+      <center>
+        <button type="submit">Salvar</button>
+      </center>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

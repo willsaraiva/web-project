@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="menu.css" rel="stylesheet">
+  <!-- <link href="searchAd.css" rel="stylesheet"> -->
+  <link href="anuncios.css" rel="stylesheet">
+  <!-- <link href="grid.css" rel="stylesheet"> -->
+
+  <title>Meus Anúncios</title>
+</head>
+
+<body>
+  <script src="./verifyToken.js"></script>
+
+  <header class="header">
+    <div class="container">
+        <a href="../home" class="grid-4">
+            <img class="logo" src="logo.jpeg" alt="Vought">
+        </a>
+
+        <nav class="header_menu grid-12">
+            <!-- tag estrutural de navegação -->
+            <ul>
+                <li> <a href="../registerAd"> Anunciar </a></li>
+                <li> <a href="../meusAd"> Meus serviços </a></li>
+                <li> <a href="../entrar"> Entrar </a></li>
+
+            </ul>
+
+        </nav>
+    </div>
+
+  </header>
+
+<!------------------ Content ---------------------->
+
+  <div id='title'>
+    <h1 id="titlesearch" class='anuncios'>Meus anúncios</h1>
+
+    <button id='btn-register'class='cadastro' onclick="registerAd()" >Cadastrar</button>
+  </div>
+
+  <div id='content' class='bloco'></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+
+</body>
+</html>

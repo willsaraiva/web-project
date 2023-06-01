@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="menu.css" rel="stylesheet">
+    <link href="user.css" rel="stylesheet">
+    <!-- <link href="grid.css" rel="stylesheet"> -->
+
+    <title>Espaço do(a) empreendedor(a)</title>
+ </head>
+
+<body>
+
+  <script src="./verifyToken.js"></script>
+  
+  <header class="header">
+    <div class="container">
+        <a href="../home" class="grid-4">
+            <img class="logo" src="logo.jpeg" alt="Vought">
+        </a>
+
+        <nav class="header_menu grid-12">
+            <!-- tag estrutural de navegação -->
+            <ul>
+                <li> <a href="../registerAd"> Anunciar </a></li>
+                <li> <a href="../meusAd"> Meus serviços </a></li>
+                <li> <a href="../entrar"> Entrar </a></li>
+
+            </ul>
+
+        </nav>
+    </div>
+
+</header>
+<!---------------- Content ------------------->
+
+  <div class='bloco'>
+    <center>
+
+      <div class='t1'>BEM-VINDX</div>
+      <div class="t2"></div>
+
+      <!-- <div onclick="updateUser()">
+        <span class="material-icons">edit</span>
+        <span>Editar perfil</span>
+        <hr>
+      </div> -->
+
+      <button type="submit" class="btn1" onclick="updateUser()">Editar Perfil</button>
+
+      <button type="submit" class="btn2" onclick="registerAd()">Cadastrar Anúncio</button>
+      <!-- <div onclick="registerAd()">
+        <span class="material-icons">control_point</span>
+        <span>Cadastrar anúncio</span>
+        <hr>
+      </div> -->
+
+      <button type="submit" class="btn3" onclick="exitUser()">SAIR</button>
+
+      <!-- <div onclick="exitUser()">
+        <span class="material-icons">directions_walk</span>
+        <span>Sair</span>
+        <hr>
+      </div> -->
+
+    </center>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

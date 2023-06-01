@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="menu.css" rel="stylesheet">
+    <link href="cadastro-anuncio.css" rel="stylesheet">
+
+    <title>Cadastro de anúncio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="pagina-inicial.html">
+                <img src="logo.jpeg" class="logo">
+            </a>
+
+            <nav class="header_menu grid-12">
+                <!-- tag estrutural de navegação -->
+                <ul>
+                    <li> <a href="cadastro-anuncio.html"> Anunciar </a></li>
+                    <li> <a href="anuncios.html"> Meus serviços </a></li>
+                    <li> <a href="login.html"> Entrar </a></li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+
+    </header>
+
+
+    --
+    <div class="subtitle">Cadastro do anúncio</div>
+    <div class="bloco-form">
+        <div class="template-form">
+            <form>
+                Nome do anúncio <br>
+                <label class="legenda"> Como irá aparecer no título </label><br>
+                <input type="text" name="nome">
+                <br><br>
+                <div class="categ">
+                  <select class="seletor" name="categorias">
+                  <option id="legenda1" value="selecione"> Selecione uma categoria</option>
+                  <option value="costura"> Costura</option>
+                  <option value="construcao"> Construção</option>
+                  <option value="eletronicos"> Eletrônicos</option>
+                  <option value="ensino"> Ensino</option>
+                  <option value="estetica"> Estética e Beleza</option>
+                  <option value="Frete"> Fretes e Mudanças</option>
+                  </select>
+                </div>
+
+              <br>
+                <label>Contato</label><br>
+                <input type="tel" id="telefone" name="telefone" pattern="[9]{1}-[0-9]{4}-[0-9]{4}">
+                <br><br>
+                <label>Valor</label><br>
+                <input type="email" name="email">
+                <br><br>
+                <label>Descrição</label><br>
+                <label class="legenda"> O que é interessante sobre seu serviço?</label><br>
+                <textarea class="caixinha" type="text" ></textarea>
+                <br>
+                <br>
+
+                <label> Link da foto</label>
+                <br>
+                <label class="legenda">Copie o link de uma foto e cole no espaço abaixo</label>
+                <input type="text" name="foto">
+
+                <br>
+                <br>
+                <center>
+                    <button type="submit" value="cadastro">Cadastrar</button>
+                </center>
+
+
+            </form>
+        </div>
+    </div>
+    <center>
+        <div class="legenda"> Ao continuar, você concorda com os termos de uso e a<br> política de privacidade de EmpreendeQXD.</div>
+    </center>
+
+    <br><br><br><br>
+
+</body>
+
+</html>

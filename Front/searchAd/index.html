@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="menu.css" rel="stylesheet">
+        <link href="listar-anuncios.css" rel="stylesheet">
+     
+        <title>Pesquisar</title>
+     </head>
+
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <a href="../home" class="grid-4">
+                    <img class="logo" src="logo.jpeg" alt="Vought">
+                </a>
+      
+                <nav class="header_menu grid-12">
+                    <!-- tag estrutural de navegação -->
+                    <ul>
+                        <li> <a href="../registerAd"> Anunciar </a></li>
+                        <li> <a href="../meusAd"> Meus serviços </a></li>
+                        <li> <a href="../entrar"> Entrar </a></li>
+      
+                    </ul>
+      
+                </nav>
+            </div>
+          </header>
+
+        <div class='title'>
+            <h1 id="titlesearch">Pesquisa por:</h1>
+            <button class="btn" onclick="clearSearch()">Limpar resultados</button>
+        </div>
+
+        <div id='content' class='bloco' ></div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
